@@ -54,7 +54,7 @@ export default function PracticeAreas() {
       <div className="px-10 sm:px-6 lg:px-8 mt-12 pb-20">
         <div className="flex flex-col space-y-10 lg:gap-6 items-center justify-center">
 
-            <div className="text-3xl font-bold mt-20 mb-25 flex text-primary sm:text-4xl lg:text-8xl bg/">
+            <div className="text-3xl font-bold mt-20 mb-24 flex text-primary sm:text-4xl lg:text-8xl bg/">
                 ÁREAS DE ATUAÇÃO
             </div>
 
