@@ -5,6 +5,7 @@
   --color-primary: #2C3E50;
   --color-secondary: #C5A266;
   --color-secondary-lighter: #EFD38B;
+  --
 
 }
 
@@ -29,6 +30,15 @@
       animation-duration: 700ms;
 
     }
+
+    .duration-1200{
+      animation-duration: 1200ms;
+    }
+  
+
+    .fade-in{
+      animation-name: fadeIn;
+    }
 }
 
 @keyframes slideInFromBottom{
@@ -50,3 +60,39 @@
     opacity: 1 translateY(0);
   }
 }
+
+@keyframes fadeIn{
+  from {
+     opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .accordion-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .accordion-enter-active {
+    max-height: 1000px; /* grande o suficiente para qualquer conteúdo */
+    opacity: 1;
+  }
+
+  .accordion-leave {
+    max-height: 1000px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .accordion-leave-active {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
