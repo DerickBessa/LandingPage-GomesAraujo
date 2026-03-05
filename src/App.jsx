@@ -16,10 +16,10 @@ function App() {
       <Hero />
       <PracticeAreas />
       <AboutTheFirm />
-      <WhyChooseUs />
       <Team />
+	  {/* <WhyChooseUs /> mockado até ter avaliacoes de clientes */}
       {/* <Testimonials /> - Contatar o cliente para decidir*/}
-      <FAQ />
+	  <FAQ />
       <ContactSection />
       <Footer />
     </div>

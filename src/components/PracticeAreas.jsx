@@ -31,30 +31,39 @@ export default function PracticeAreas() {
     content: "Direito civil, com atuação em sucessões e inventários, questões bancárias e financeiras, responsabilidade civil e litígios médicos, elaboração e análise de contratos, assessoria em negociações e acompanhamento judicial, com foco na prevenção de riscos e na proteção dos interesses do cliente."
   },
   {
-    name: "Direito Familiar",
-    content: "Direito Familiar, com assessoria em divórcios, guarda, pensão alimentícia, união estável e regimes de bens, elaboração de acordos e mediações, orientação em questões patrimoniais e sucessórias, com foco na preservação de direitos, soluções justas e planejamento familiar estratégico."
+    name: "Direito de Família",
+    content: "Direito de Família, com assessoria em divórcios, guarda, pensão alimentícia, união estável e regimes de bens, elaboração de acordos e mediações, orientação em questões patrimoniais e sucessórias, com foco na preservação de direitos, soluções justas e planejamento familiar estratégico."
   }
 ];
     return (
     <section
       id="practiceareas"
-      className="relative min-h-[1000px]"
+      className="relative min-h-screen"
     >
       {/* BLOCO DO TÍTULO COM FUNDO FULL WIDTH */}
-      <div className="bg-primary py-25 text-center justify-center">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white/85">
+      <div className="bg-primary py-20 text-center justify-center">
+        <h2 className="text-4xl font- sm:text-5xl lg:text-6xl font-bold text-white/85">
         Experiência que atravessa <strong className="text-secondary-lighter">diferentes frentes</strong>.
         </h2>
-        <p className=" text-xl sm:text-4xl mt-10 mx-auto text-center rounded-full py-2 bg-secondary-lighter/90 shadow-3xl w-[90%] lg:w-[65%]">
+        <p className=" text-xl sm:text-4xl font-serif mt-10 mb-10 mx-auto text-center rounded-full py-2 bg-secondary-lighter/90 shadow-3xl w-[90%] lg:w-[65%]">
         <strong className="text-primary">Compromisso  que permanece o mesmo.</strong>
         </p>
+		<div className="flex justify-center">
+			<a href="https://wa.me/5585997933549?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21" target="_blank" className="bg-contact w-80 h-15 mt-5 cursor-pointer rounded-full flex items-center px-3">
+				<img src="/assets/wazap.png" alt="zap" className="rounded-full w-10 h-10"/>
+			<p className="font-bold text-lg flex-1 text-center text-white">Falar com um Especialista.</p>
+			</a>
+		</div>
       </div>
 
       {/* CONTEÚDO COM PADDING NORMAL */}
-      <div className="px-10 sm:px-6 lg:px-8 mt-12 pb-20">
+      <div className="px-10 sm:px-6 lg:px-8 mt-12 pb-20 ">
+		<div>
+			<img src="/assets/marcapreta.png" alt="marca preta" className="hidden absolute lg:flex opacity-10 bottom-1 top-110 left-125 w-fit h-90" />
+		</div>
         <div className="flex flex-col space-y-10 lg:gap-6 items-center justify-center">
 
-            <div className="text-3xl font-bold mt-20 mb-24 flex text-primary sm:text-4xl lg:text-8xl bg/">
+            <div className="relative ml-16 lg:ml-0 text-3xl font-bold font-serif w-100 mt-20 mb-24 flex text-primary sm:text-4xl lg:text-7xl">
                 ÁREAS DE ATUAÇÃO
             </div>
 
@@ -64,7 +73,7 @@ export default function PracticeAreas() {
                 <div key={index} className="relative ">
                 <div
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className={`flex max-w-[500px] items-center text-3xl shadow-xl font-bold rounded-2xl  px-6 py-2  duration-300 group cursor-pointer relative z-20
+                    className={`flex max-w-[500px] items-center text-3xl font-serif shadow-xl font-bold rounded-2xl  px-6 py-2  duration-300 group cursor-pointer relative z-20
                          ${openIndex === index ? "bg-secondary-lighter text-primary hover:bg-primary hover:text-secondary-lighter transition-colors" : " bg-primary text-secondary-lighter hover:bg-secondary-lighter hover:text-primary transition-colors"}`}
                 >
                     <button className="relative px-3 py-3 ">
@@ -84,7 +93,7 @@ export default function PracticeAreas() {
                     }`}
                 >
                     <div
-                    className={`relative bottom-8 z-0 lg:text-xl max-w-[420px] hyphens-auto w-full h-auto bg-primary/85 b backdrop-blur-3xl rounded-xl font-bold text-white/80 p-4  pr-3 text-left break-words accordion-enter accordion-enter-active transition-all duration-500 ease-in-out transform ${
+                    className={`relative bottom-8 z-0 lg:text-xl max-w-[420px] w-full h-auto bg-primary/85 b backdrop-blur-3xl rounded-xl font-bold text-white/80 p-4  pr-3 text-left accordion-enter accordion-enter-active transition-all duration-500 ease-in-out transform ${
                         openIndex === index ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
                     }`}
                     >

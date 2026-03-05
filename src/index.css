@@ -5,10 +5,28 @@
   --color-primary: #2C3E50;
   --color-secondary: #C5A266;
   --color-secondary-lighter: #EFD38B;
+  --color-contact: #65B400;
 
 }
 
 @layer utilities{
+
+		.gradient-background-1 {
+	background: linear-gradient(
+		180deg,
+		var(--color-secondary),
+		var(--color-secondary-lighter)
+	);
+	}
+
+	.gradient-background-2 {
+	background: linear-gradient(
+		30deg,
+		var(--color-secondary-lighter),
+		var(--color-secondary)
+	);
+	}
+
     .animate-in{
       animation-fill-mode: both;
     }

@@ -7,7 +7,7 @@ export default function Navbar( ) {
 
     return (
     <>
-        <nav className="fixed flex justify-center space-x-4 top-0 w-full h-30 z-50 bg-primary rounded-b-3xl transition-all duration-300 backdrop-blur-sm sm:h-30 md:h-35 animate-in slide-in-from-top duration-700">
+        <nav className="fixed flex justify-center space-x-4 top-0 w-full h-30 z-50 bg-primary border-b-4 border-secondary-lighter rounded-b-3xl transition-all duration-300 backdrop-blur-sm sm:h-30 md:h-35 animate-in slide-in-from-top duration-700">
             <div className="px-2 sm:px-3 lg:px-4">
                 <div className="flex justify-centers space-x-10 items-center h-14 sm:h-16 md:h-20">
                     <div className="flex items-center  group cursor-pointer ">
@@ -20,24 +20,23 @@ export default function Navbar( ) {
                     {/* navlinks */}
                     <div className="hidden md:flex  items-center justify-end space-x-3 lg:space-x-8">
                         
-                        <a href="#practiceareas" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
+                        <a href="#practiceareas" className="text-secondary-lighter font-bold font-serif hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
                             Áreas de atuação
                         </a>
-                        <a href="#aboutfirm" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
+                        <a href="#aboutfirm" className="text-secondary-lighter font-bold font-serif hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
                             Quem somos
                         </a>
-                        <a href="#yus" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
-                            Nosso diferencial
-                        </a>
-                        <a href="#team" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
+                        <a href="#team" className="text-secondary-lighter font-bold font-serif hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
                             Nossa Equipe
                         </a>
-
-                        <a href="#faq" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs sm:mr-8">
+						{/* <a href="#yus" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
+                            Nosso diferencial
+                        </a> */}
+                        <a href="#faq" className="text-secondary-lighter font-bold font-serif hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs sm:mr-8">
                             FAQ
                         </a>
 
-                        <a href="#contact" className="text-secondary-lighter font-bold hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
+                        <a href="#contact" className="text-secondary-lighter font-bold font-serif hover:text-secondary text-sm mt-5 md:text-xl md:mt-18 sm:mt-15 sm:text-xs">
                             Fale Conosco
                         </a>
                     </div>
