@@ -93,7 +93,7 @@ export default function PracticeAreas() {
                     }`}
                 >
                     <div
-                    className={`relative bottom-8 z-0 lg:text-xl max-w-[420px] w-full h-auto bg-primary/85 b backdrop-blur-3xl rounded-xl font-bold text-white/80 p-4  pr-3 text-left accordion-enter accordion-enter-active transition-all duration-500 ease-in-out transform ${
+                    className={`relative bottom-8 z-0 lg:text-xl max-w-[500px] w-full h-auto bg-primary/85 b backdrop-blur-3xl rounded-xl font-bold text-white/80 p-4  pr-3 text-left accordion-enter accordion-enter-active transition-all duration-500 ease-in-out transform ${
                         openIndex === index ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
                     }`}
                     >
