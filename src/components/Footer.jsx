@@ -58,7 +58,7 @@ export default function FooterSection() {
 
           <ul className=" flex flex-col space-y-2 text-gray-400">
              <div className="flex"><MapPin className="mr-2"/><a target="_blank" href="https://maps.app.goo.gl/3p5wn8yRZ6qahdzcA">  Fortaleza - CE</a></div>
-             <div className="flex"><Phone className="mr-2"/><a target="_blank" href="https://wa.me/5585997933549?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21">  (85) 99794-3549</a></div>
+             <div className="flex"><Phone className="mr-2"/><a target="_blank" href="https://wa.me/5585997666995?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21">  (85) 99794-3549</a></div>
              <div className="flex"><Mail className="mr-2"/><a target="_blank" href="mailto:gomesaraujo.advogado@gmail.com">gomesaraujo.advogado@gmail.com</a></div>
 		</ul>
         </div>

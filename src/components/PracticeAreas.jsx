@@ -33,6 +33,10 @@ export default function PracticeAreas() {
   {
     name: "Direito de Família",
     content: "Direito de Família, com assessoria em divórcios, guarda, pensão alimentícia, união estável e regimes de bens, elaboração de acordos e mediações, orientação em questões patrimoniais e sucessórias, com foco na preservação de direitos, soluções justas e planejamento familiar estratégico."
+  },
+  {
+	name:"Direito de Sucessões",
+	content: "Direito de Sucessões, com assessoria em inventários judiciais e extrajudiciais, elaboração e acompanhamento da partilha de bens, análise de herdeiros e direitos sucessórios, regularização de patrimônios e mediação de conflitos entre os envolvidos, com foco na segurança jurídica, soluções justas e planejamento sucessório estratégico."
   }
 ];
     return (
@@ -42,14 +46,14 @@ export default function PracticeAreas() {
     >
       {/* BLOCO DO TÍTULO COM FUNDO FULL WIDTH */}
       <div className="bg-primary py-20 text-center justify-center">
-        <h2 className="text-4xl font- sm:text-5xl lg:text-6xl font-bold text-white/85">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white/85">
         Experiência que atravessa <strong className="text-secondary-lighter">diferentes frentes</strong>.
         </h2>
         <p className=" text-xl sm:text-4xl font-serif mt-10 mb-10 mx-auto text-center rounded-full py-2 bg-secondary-lighter/90 shadow-3xl w-[90%] lg:w-[65%]">
         <strong className="text-primary">Compromisso  que permanece o mesmo.</strong>
         </p>
 		<div className="flex justify-center">
-			<a href="https://wa.me/5585997933549?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21" target="_blank" className="bg-contact w-80 h-15 mt-5 cursor-pointer rounded-full flex items-center px-3">
+			<a href="https://wa.me/5585997666995?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21" target="_blank" className="bg-contact w-80 h-15 mt-5 cursor-pointer rounded-full flex items-center px-3">
 				<img src="/assets/wazap.png" alt="zap" className="rounded-full w-10 h-10"/>
 			<p className="font-bold text-lg flex-1 text-center text-white">Falar com um Especialista.</p>
 			</a>
@@ -59,7 +63,7 @@ export default function PracticeAreas() {
       {/* CONTEÚDO COM PADDING NORMAL */}
       <div className="px-10 sm:px-6 lg:px-8 mt-12 pb-20 ">
 		<div>
-			<img src="/assets/marcapreta.png" alt="marca preta" className="hidden absolute lg:flex opacity-10 bottom-1 top-110 left-125 w-fit h-90" />
+			<img src="/assets/marcapreta.png" alt="marca preta" className="hidden absolute lg:flex opacity-10 bottom-1 md:top-200 top-110 left-125 w-fit h-90" />
 		</div>
         <div className="flex flex-col space-y-10 lg:gap-6 items-center justify-center">
 

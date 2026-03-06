@@ -1,6 +1,45 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 
 export default function ContactSection() {
+
+  const [enviado, setEnviado] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setEnviado(true);
+        e.target.reset(); // limpa o formulário
+      } else {
+        alert("Erro ao enviar mensagem.");
+      }
+
+    } catch (error) {
+      console.error("Erro:", error);
+      alert("Erro ao enviar mensagem.");
+    }
+  }
+
+
   return (
     <section id="contact" className="bg-primary border-t-8 border-primary min-h-screen flex justify-center items-center px-4 py-12">
 
@@ -27,7 +66,7 @@ export default function ContactSection() {
 
             <div className="flex items-center gap-2">
               <Phone size={18} />
-              <a href="https://wa.me/5585997933549?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21" className="hover:underline">(85) 99793-3549</a>
+              <a href="https://wa.me/5585997666995?text=Ol%C3%A1%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conhecer%20mais%20sobre%20os%20servi%C3%A7os%21" target="_blank" className="hover:underline">(85)99766-6995</a>
             </div> 
 
             <div className="flex items-center gap-2">
@@ -68,13 +107,14 @@ export default function ContactSection() {
         {/* COLUNA DIREITA */}
         <div className="p-6 md:p-12">
 
-          <form className="flex flex-col gap-5">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
             <div>
               <label className="block mb-1 font-semibold text-gray-700">
                 Nome
               </label>
               <input
+			  	name="name"
                 type="text"
                 placeholder="Seu nome"
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
@@ -82,10 +122,13 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-700">
+              <label
+			  	
+			   className="block mb-1 font-semibold text-gray-700">
                 Email
               </label>
               <input
+			  	name="email"
                 type="email"
                 placeholder="seuemail@email.com"
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
@@ -97,6 +140,7 @@ export default function ContactSection() {
                 Assunto
               </label>
               <input
+			  	name="subject"
                 type="text"
                 placeholder="Assunto da mensagem"
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
@@ -108,6 +152,7 @@ export default function ContactSection() {
                 Mensagem
               </label>
               <textarea
+			  	name="message"
                 rows="4"
                 placeholder="Descreva brevemente sua situação..."
                 className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"

@@ -4,7 +4,7 @@ import { Instagram } from "lucide-react";
 export default function AboutTheFirm( ) {
 
     return (<section id="aboutfirm" className="min-h-screen bg-primary border-t-20 rounded-2xl border-primary">
-			<div className="flex justify-center'">
+			<div className="flex justify-center">
 				<div className="mt-5 text-center w-full">
 					<div className="flex justify-center text-center mt-10 mb-5 w-full gradient-background-1">
 						<p className="text-primary font-serif lg:ml-5 font-bold text-6xl  px-20 py-10 ">
@@ -21,8 +21,8 @@ export default function AboutTheFirm( ) {
 						<h1 className="flex-col-1 font-serif text-secondary-lighter font-bold text-6xl">
 							Quem somos?
 						</h1>
-					<div className="flex justify-center ">
-						<p className="text-white mt-6 text-sm border-2 w-13'0 rounded-full  border-secondary py-2 font-semibold px-2">
+					<div className="flex justify-center">
+						<p className="text-white mt-6 text-sm border-2 w-130 rounded-full  border-secondary py-2 font-semibold px-2">
 								Há mais de 10 anos, lutando pelo que realmente importa: os Seus Direitos.
 						</p>
 					</div>

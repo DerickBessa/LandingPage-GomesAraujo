@@ -6,8 +6,8 @@ export default function Team( ) {
 			<h1 className=" font-bold font-serif text-5xl md:text-6xl lg:text-8xl mb-5 ">
 				Nossa Equipe
 			</h1>
-			<p className="mt-3 border-3 rounded-full text-xs py-1 px-2 lg:text-base lg:px-3 font-bold bg-secondary-lighter border-primary">
-				Esses são os profissionais que lutam para garantir o que é seu
+			<p className="mt-3 border-3 rounded-full text-base text-center py-2 lg:py-1 lg:px-2 lg:text-base lg:px-3 font-bold bg-secondary-lighter border-primary">
+				Profissionais capacitados para lutar e garantir todos os seus direitos
 			</p>
 		</div>
 
@@ -25,7 +25,7 @@ export default function Team( ) {
 			<div className="flex flex-col text-center lg:text-left gap-6 max-w-3xl">
 
 				<h1 className="text-3xl lg:text-5xl font-serif font-bold text-primary">
-				Dr. Alaan <strong className="bg-primary px-2 text-secondary-lighter">Gomes de Almeida</strong>
+				Dr. Alaan <strong className="bg-primary px-2 text-secondary-lighter">Gomes</strong> de Almeida
 				</h1>
 
 				<p className="text-white text-base lg:text-xl font-serif p-4 rounded-2xl bg-cyan-950/50">
@@ -73,7 +73,7 @@ export default function Team( ) {
 		<div className="flex flex-col text-center lg:text-left gap-6 max-w-3xl">
 
 			<h1 className="text-3xl lg:text-6xl font-serif font-bold text-primary">
-			Dr. Brenno <strong className="bg-primary px-2 text-secondary-lighter">Gomes de Almeida</strong>
+			Dr. Brenno <strong className="bg-primary px-2 text-secondary-lighter">Almeida</strong>
 			</h1>
 
 			<p className="text-white text-lg lg:text-2xl font-serif p-4 rounded-2xl bg-cyan-950/50">
