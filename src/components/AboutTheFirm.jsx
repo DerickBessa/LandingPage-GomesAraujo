@@ -38,7 +38,7 @@ export default function AboutTheFirm( ) {
 						</div>
 					
 					</div>
-					<div className="flex justify-center">
+					<div className="flex justify-center mb-10">
 						<a href="https://www.instagram.com/gomesaraujo.advogados/" target="_blank"><Instagram size={40} className="text-secondary-lighter"/></a>
 					</div>
 					<div>
