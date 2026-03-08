@@ -63,7 +63,7 @@ export default function PracticeAreas() {
       {/* CONTEÚDO COM PADDING NORMAL */}
       <div className="px-10 sm:px-6 lg:px-8 mt-12 pb-20 ">
 		<div>
-			<img src="/assets/marcapreta.png" alt="marca preta" className="hidden absolute lg:flex opacity-10 bottom-1 md:top-200 top-110 left-125 w-fit h-90" />
+			<img src="/assets/marcapreta.png" alt="marca preta" className="hidden absolute lg:flex opacity-10 bottom-1 top-110 left-125 w-fit h-90" />
 		</div>
         <div className="flex flex-col space-y-10 lg:gap-6 items-center justify-center">
 
